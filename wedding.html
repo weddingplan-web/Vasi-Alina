@@ -13,10 +13,8 @@
             color: #333;
         }
         header {
-            background: url('https://png.pngtree.com/background/20230623/original/pngtree-floral-design-invitation-picture-image_3990782.jpg') no-repeat center center;
-            background-size: cover;  /* Ensures background image always covers the screen */
-            height: 100vh;  /* Full viewport height */
-            width: 100vw;  /* Full viewport width */
+            background: url('https://png.pngtree.com/background/20230623/original/pngtree-floral-design-invitation-picture-image_3990782.jpg') no-repeat center/cover;
+            height: 100vh;
             color: white;
             text-align: center;
             display: flex;
@@ -81,11 +79,11 @@
         }
         .flower-left {
             left: 10px;
-            background-image: url('https://images.unsplash.com/photo-1553704740-7b26e7a83a49');
+            background-image: url('https://images.unsplash.com/photo-1553704740-7b26e7a83a49'); /* Static flower image */
         }
         .flower-right {
             right: 10px;
-            background-image: url('https://images.unsplash.com/photo-1502760408-8b5ff7ba1828');
+            background-image: url('https://images.unsplash.com/photo-1502760408-8b5ff7ba1828'); /* Static flower image */
         }
         nav {
             background: rgba(255, 255, 255, 0.9);
@@ -147,22 +145,6 @@
             color: white;
             text-align: center;
             padding: 20px;
-        }
-
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 768px) {
-            header {
-                background-size: cover; /* Maintain cover size to fit the screen */
-                background-position: center; /* Ensure it remains centered */
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                background-size: cover; /* Ensures the image covers the screen */
-                background-position: center; /* Keeps the background centered */
-                height: 80vh; /* Adjust header height for small screens */
-            }
         }
     </style>
     <script>
